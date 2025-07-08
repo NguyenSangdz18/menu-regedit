@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Panel Regedit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu-rect">
+    <p class="rainbow-text">𝙋𝘼𝙉𝙀𝙇 𝙍𝙀𝙂𝙀𝘿𝙄𝙏</p>
+    <p class="mini-text">@SangNguyen⚡️</p>
+    <div class="line"></div>
+
+    <div class="option-row">
+      <div class="option-text">Aimlock</div>
+      <button class="btn-mini" onclick="activate(this)">ACTIVATE</button>
+    </div>
+    <div class="option-row">
+      <div class="option-text">Aimbot</div>
+      <button class="btn-mini" onclick="activate(this)">ACTIVATE</button>
+    </div>
+    <div class="option-row">
+      <div class="option-text">Sensi X</div>
+      <button class="btn-mini" onclick="activate(this)">ACTIVATE</button>
+    </div>
+    <div class="option-row">
+      <div class="option-text">Sensi Y</div>
+      <button class="btn-mini" onclick="activate(this)">ACTIVATE</button>
+    </div>
+    <div class="option-row">
+      <div class="option-text">Macro</div>
+      <button class="btn-mini" onclick="activate(this)">ACTIVATE</button>
+    </div>
+
+    <div class="remove-row">
+      <button class="btn-remove" onclick="removeStatus()">REMOVE</button>
+      <div id="statusText" class="status-text"></div>
+    </div>
+
+    <button class="btn-full">FFTH X FFMAX</button>
+  </div>
+
+  <script>
+    function activate(btn) {
+      const status = document.getElementById('statusText');
+      status.textContent = 'Loading...';
+      setTimeout(() => {
+        status.textContent = 'Kích hoạt !!!';
+      }, 2000);
+    }
+
+    function removeStatus() {
+      const status = document.getElementById('statusText');
+      status.textContent = 'Loading...';
+      setTimeout(() => {
+        status.textContent = 'Disable !!!';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
